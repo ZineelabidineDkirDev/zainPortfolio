@@ -46,7 +46,7 @@ const Home = () => {
     const timer = setTimeout(handleTyping,30);
 
     return () => clearTimeout(timer);
-  }, [charIndex, isDeleting, index]);
+  }, [charIndex, isDeleting, index, strings]);
 
   return (
   <section className="relative xl:h-screen xl:mx-32
