@@ -19,8 +19,8 @@ const Photo = () => {
              className="w-[200px] h-[200px] mt-0
             xl:w-[470px] xl:mt-[-50px] xl:h-[470px] mix-blend-hue">
                 <Image src="/images/homebn.png" fill priority 
-                quality={100}
-                className="object-contain shadow-md xl:rounded-bl-[200px] xl:rounded-br-[60px]"/>
+                quality={100} 
+                className="object-contain shadow-md xl:rounded-bl-[200px] xl:rounded-br-[60px]" alt=""/>
             </motion.div>
         </motion.div>
     </div>

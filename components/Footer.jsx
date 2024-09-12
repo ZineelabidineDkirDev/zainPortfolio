@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Logo or Brand Name */}
         <div className="-mt-3 xl:mb-0 mb-8">
         <Image src="/images/hlogo.png"
-         width={40} height={40} />
+         width={40} height={40} alt="" />
         </div>
 
         {/* Navigation Links */}

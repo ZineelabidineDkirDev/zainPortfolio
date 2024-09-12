@@ -90,7 +90,7 @@ const experience = {
       positon :"Web Integrator & web digital ",
       descexp:"C'est fantastique d'entendre que j’ai acquis des compétences techniques en développement web sur cette boite de communication qui appartient a un grand centre d'assurance Elly France , dont quel j'ai occupé un poste de gestion de contenu au sein d'une équipe travaillant sur des sites WordPress. Parmis les points importants à prendre en compte dans votre parcours ",
       tasks:[
-        <ul className="list-item gap-8 ">
+        <ul className="list-item gap-8 " key="">
           
          <li>
          <h3 className="text-xl font-bold">1. Compétences techniques :</h3>
