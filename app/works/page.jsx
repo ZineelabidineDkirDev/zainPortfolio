@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import 'swiper/css';
 import useFetchData from "@/app/works/data";
 import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
+import Image from "next/image";
 
 const Work = () => {
   const { projects, getProjectTags, error } = useFetchData();
@@ -121,7 +122,7 @@ const Work = () => {
                   <div className="h-[260px] xl:h-[460px] relative
                    flex justify-center items-center bg-pink-50">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    <img src={im.Cover} alt={im.title}
+                    <Image src={im.Cover} alt={im.title}
                        className="h-full"/>
                   </div>
                 </SwiperSlide>

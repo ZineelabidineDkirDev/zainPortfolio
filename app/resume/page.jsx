@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import  Link  from "next/link";
 import  Image  from "next/image";
 import { FaAngular, FaCss3, FaFileExcel, FaGithub, FaHtml5, FaJs, FaLaravel, FaPhp, FaReact, FaRegIdBadge, FaSchool, FaSlack, FaTrello } from "react-icons/fa";
 import { useEffect, useState } from "react";
@@ -17,7 +16,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { TfiSkype } from "react-icons/tfi";
 import { HiLanguage } from "react-icons/hi2";
 import { LiaFileContractSolid } from "react-icons/lia";
-import { PiCertificate } from "react-icons/pi";
 
 
 
@@ -392,11 +390,11 @@ import {
 import { SiHyperskill } from "react-icons/si";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { BsArrowRightSquare, BsFileExcel, BsFlagFill, BsGitlab, BsWordpress } from "react-icons/bs";
+import { BsArrowRightSquare, BsFlagFill, BsGitlab, BsWordpress } from "react-icons/bs";
 import { IoMdSchool } from "react-icons/io";
 import { AiTwotoneExperiment } from "react-icons/ai";
 import TaskModal from "@/components/ui/TaskModal";
-import { GitBranch, QrCode } from "lucide-react";
+import { GitBranch } from "lucide-react";
 
 export function Tasking({ task }) {
   const [isReadMore, setIsReadMore] = useState(false); // Initialize state for each task
@@ -473,7 +471,8 @@ const Resume = () => {
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] text-left">{
                   experience.items.map((item,index)=>{
                     return(
-                    <li key={index} className="bg-white/5 px-5 py-4 shadow-lg rounded-lg ">
+                      <div key={index}>
+                    <li  className="bg-white/5 px-5 py-4 shadow-lg rounded-lg ">
                       <Image src={item.iconexp}
                              alt={item.company}
                              width={100} 
@@ -499,7 +498,9 @@ const Resume = () => {
                         {/* Modal */}
                         <TaskModal tasks={selectedTasks} isOpen={isModalOpen} onClose={closeModal} />
                        </div>
-                    </li>)
+                    </li>
+                    </div>
+                    )
                   })
                 }</ul>
                 </ScrollArea>
@@ -549,12 +550,15 @@ const Resume = () => {
                         {
                           skill.devskills.map((skilogo,index)=>{
                             return(
-                              <li className="xl:h-[100px] h-[180px] pointer-events-auto bg-white/5 hover:text-yellow-200 hover:transition-all hover:duration-200 hover:bg-accent/45 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5" key={index}>
+                              <div key={index}>
+                                <li className="xl:h-[100px] h-[180px] pointer-events-auto bg-white/5 hover:text-yellow-200 hover:transition-all hover:duration-200 hover:bg-accent/45 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5" 
+                              >
                                 
                                   <p className="text-5xl xl:text-4xl">{skilogo.icon}</p>
                                   <h3 className="text-2xl">{skilogo.name}</h3>
 
                               </li>
+                              </div>
                             )
                           })
                         }
@@ -586,14 +590,14 @@ const Resume = () => {
                         {
                           skill.devskills.map((skilogo,index)=>{
                             return(
-                              
-                              <li className="xl:h-[100px] h-[180px] pointer-events-auto bg-white/5 hover:text-yellow-200 hover:transition-all hover:duration-200 hover:bg-accent/45 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5" key={index}>
+                              <div key={index} >
+                              <li  className="xl:h-[100px] h-[180px] pointer-events-auto bg-white/5 hover:text-yellow-200 hover:transition-all hover:duration-200 hover:bg-accent/45 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5" >
                                 
                                   <p className="text-5xl xl:text-4xl">{skilogo.icon}</p>
                                   <h3 className="text-2xl">{skilogo.name}</h3>
                                   
                               </li>
-                              
+                              </div>
                             )
                           })
                         }
