@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+@layer base {
+   body{
+    @apply font-primary bg-primary text-white leading-none;
+  }
+  .counterup, .name_portfolio{
+    @apply font-secondary !important
+  }
+  .h1{
+    @apply text-[32px] xl:text-[50px] leading-[1.1] font-semibold;
+  }
+  .h2{
+    @apply text-[25px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3{
+    @apply text-[20px] xl:text-[25px] leading-[1.1] font-semibold;
+  }
+
+  .shape img {
+  @apply absolute w-full -z-10 opacity-35;
+}
+
+.shape1 {
+  @apply right-[-160px] top-[60px] h-[170px] w-[170px] opacity-[0.5] origin-center;
+}
+
+.shape2 {
+  @apply left-[-370px] top-[-120px] w-[90px] h-[90px] opacity-[0.5] origin-center;
+} 
+
+.shape3 {
+  @apply left-[-500px] top-[180px] w-[60px] h-[60px] opacity-[0.5] origin-center;
+}
+
+.shape4 {
+  @apply left-0 bottom-0 w-[200px] h-[200px] opacity-[0.4] origin-center;
+}
+
+.shape5 {
+  @apply left-[500px] top-0 w-[300px] h-[300px] opacity-0 origin-center;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #fff; 
+  color: transparent;
+}
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #D9FF00; 
+  color: transparent; 
+}
+
+.text-regular {
+  color: var(--accent); 
+}
+
+.fork-title-before {
+  content:'';
+  top:150px;
+  position:absolute;
+  width:30px;
+  background:#D9FF00;
+  height:3px;
+}
+.model-bg-modal
+{
+  background:rgba(30,30,50,.23)
+}
+
+.toast {
+  background-color: #1d1f21; /* Dark background */
+  color: #ffffff; /* Text color */
+}
+}
+
+
+@layer utilities {
+ 
+  .bg-overlay {
+    background-size:cover;
+    z-index:-20;
+    opacity:.060
+  }
+
+}
+
