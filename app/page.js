@@ -4,6 +4,7 @@ import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IoMdDownload } from "react-icons/io";
 
@@ -96,9 +97,9 @@ const Home = () => {
     <Stats />
   </div>
     <div className="shape">
-      <img className="shape1 animate-shape1" src="images/shape.svg" alt=""/>
-      <img className="shape2 animate-shape2" src="images/shape.svg" alt=""/>
-      <img className="shape5 animate-shape5" src="images/shape.svg" alt=""/>
+      <Image className="shape1 animate-shape1" src="images/shape.svg" alt=""/>
+      <Image className="shape2 animate-shape2" src="images/shape.svg" alt=""/>
+      <Image className="shape5 animate-shape5" src="images/shape.svg" alt=""/>
     </div>
 </section>
   );

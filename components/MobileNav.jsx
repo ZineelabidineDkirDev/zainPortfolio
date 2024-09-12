@@ -41,7 +41,7 @@ const MobileNav = () => {
       <SheetContent className="flex flex-col justify-center items-center gap-8">
         <div className="mt-2 mb-20 text-center text-2xl">
           <Link href="/">
-          <Image src="/images/hlogo.png" width={60} height={60} 
+          <Image src="/images/hlogo.png" width={60} height={60} alt=""
                 className="object-contain"/>
           </Link>
         </div>
