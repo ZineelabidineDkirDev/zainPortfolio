@@ -85,16 +85,46 @@ const experience = {
       ]
     },
     {
-      company: "Cairful Gmbh",
+      company: "Elly insurrance",
       iconexp: "/exp/logoelly.png",
-      location: "Rabat - Mororcco",
+      location: "Salé - Mororcco",
       duration: "Jully 2019 - Juin 2020",
-      positon :"Software developper dotNet ",
-      descexp:"Conception et développement d'une application web complète pour la gestion desservices de transport, y compris l'authentification sécurisée des membres.Importation et localisation des informations des transporteurs pour une gestion efficace des transports.",
+      positon :"Web Integrator & web digital ",
+      descexp:"C'est fantastique d'entendre que j’ai acquis des compétences techniques en développement web sur cette boite de communication qui appartient a un grand centre d'assurance Elly France , dont quel j'ai occupé un poste de gestion de contenu au sein d'une équipe travaillant sur des sites WordPress. Parmis les points importants à prendre en compte dans votre parcours ",
       tasks:[
-        "- Pendant une période de 1 an et 3 mois, j’ai eu le privilège de travailler en tant que développeur logiciel spécialisé dans la technologie dotNet, en particulier avec WPF (Windows Presentation Foundation) et XAML. Mon rôle principal était de concevoir et de développer une application dédiée à la maintenance et au suivi des personnes âgées",
-        "- Mon rôle exigeait une collaboration étroite avec une équipe multidisciplinaire, ce qui a renforcé ma capacité à travailler efficacement en équipe et à communiquer de manière transparente avec les membres de l’équipe.",
-        "- Ma maîtrise des technologies clés, telles que C#, WPF et XAML, ainsi que ma compréhension approfondie des architectures MVC (Modèle-Vue-Contrôleur) et MVVM (Modèle-Vue-Modèle), m’ont permis de concevoir une application robuste et modulaire",
+        <ul className="list-item gap-8 ">
+          
+         <li>
+         <h3 className="text-xl font-bold">1. Compétences techniques :</h3>
+          <p> ReactJS et MERN Stack : Le fait que j'ai maîtriser ces technologies front-end et full-stack est 
+           un atout majeur dans le domaine du développement web, sur des applications web interactives et
+            dynamiques en utilisant ReactJS, ainsi que sur des applications MERN (MongoDB, ExpressJs, Redux,
+             Node.js) qui combinent un backend robuste avec un frontend réactif.</p>
+          </li> 
+
+          <li>
+          <h3 className="text-xl font-bold">2. Gestion de contenu :</h3>
+          <p> Occuper un poste de gestion de contenu dans une équipe travaillant sur des sites en PHP montre 
+            que vous avez de l'expérience dans la création, la gestion et la mise à jour de contenu sur des
+             plateformes CMS populaires. Cela peut inclure la rédaction, la publication, la gestion des médias,
+              la mise en page, etc.</p>
+          </li>
+
+          <li>
+          <h3 className="text-xl font-bold">3. Mon Rôle pricipal</h3>
+         <p> Il est essentiel de mettre en avant mes compétences et cette expérience sur mon CV.
+           Me permet d'envisager et de mettre en avant des projets spécifiques sur lesquels j'ai travaillé,
+            même que les résultats que j'ai obtenus en tant que gestionnaire de contenu.</p>
+          </li>
+
+          <li>
+          <h3 className="text-xl font-bold">4. Result</h3>
+         <p>En fonction de mon aspirations professionnelles, j'ai envisager de continuer à évoluer dans 
+          le domaine du développement web, peut-être en tant que développeur front-end dans ReactJS,
+           ou bien me permet de chercher des opportunités dans le domaine de la gestion de contenu ou du 
+           marketing digital.</p>
+          </li>
+         </ul>
       ]
     },
     {
@@ -361,7 +391,7 @@ import {
 
 import { SiHyperskill } from "react-icons/si";
 
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { BsArrowRightSquare, BsFileExcel, BsFlagFill, BsGitlab, BsWordpress } from "react-icons/bs";
 import { IoMdSchool } from "react-icons/io";
 import { AiTwotoneExperiment } from "react-icons/ai";
@@ -415,15 +445,15 @@ const Resume = () => {
       transition:{delay:2.5, duration:.5, ease:'easeInOut'},
     }}
     className="min-h-[80vh] flex items-center 
-    justify-center py-14 xl:py-0 mt-2 xl:mt-32"
+    justify-center py-14 xl:py-0 mt-2 "
     >
       <div className="mx-auto">
 
         <Tabs defaultValue="experince"
-              className="grid grid-cols-1 p-3 
-              w-[500px] xl:w-[900px] gap-[40px] xl:-ml-[400px] ">
+              className="grid grid-cols-1 p-3 mx-10 w-[400px] 
+              xl:w-[900px] gap-[40px] xl:-ml-[400px] ">
           <TabsList className="grid grid-cols-2 xl:grid-cols-1
-           xl:fixed grid-rows-1 xl:justify-start xs:items-center
+            grid-rows-1 xl:justify-start xs:items-center
            xl:w-full mx-0 xl:mx-0 gap-3 xl:gap-10">
             <TabsTrigger value="experience"> <AiTwotoneExperiment className="text-xl" /> Experience</TabsTrigger>
             <TabsTrigger value="education"> <IoMdSchool className="text-xl" />  Education</TabsTrigger>
@@ -431,7 +461,7 @@ const Resume = () => {
             <TabsTrigger value="about"><CgProfile className="text-xl" /> Profile </TabsTrigger>
           </TabsList>
 
-          <div className="min-h-[70vh] w-full xl:ml-96 ml-0 overflow-x-visible">
+          <div className="min-h-[70vh] w-[400px] xl:mx-0 xl:w-full xl:-mt-[350px] xl:ml-96 mb-16">
             <TabsContent value="experience" 
             className="w-full ">
                <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -439,7 +469,7 @@ const Resume = () => {
                 <p className="max-full text-justify font-medium space-x-2 leading-8 text-white/60 mx-auto xl:mx-0">
                 {experience.description}
                 </p>
-                <ScrollArea className="h-[600px] leading-8 ">
+                <ScrollArea className="h-[450px] leading-8" orientation="vertical">
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] text-left">{
                   experience.items.map((item,index)=>{
                     return(
@@ -448,7 +478,7 @@ const Resume = () => {
                              alt={item.company}
                              width={100} 
                              height={100}
-                             className="object-contain fit xl:ml-0 ml-44"/>
+                             className="object-contain fit xl:ml-0 "/>
                        <span className="text-xl font-semibold">{item.company} / {item.location}</span>
                        <h3>{item.positon}</h3>
                        <p className="text-yellow-500">{item.duration.replace('-',' to ')}</p>
@@ -545,26 +575,31 @@ const Resume = () => {
               <ul className="mb-16">
                  {skills.skillsList1.map((skill,index)=>{
                   return (<div key={index}>
+                    <ScrollArea className="h-[600px]" orientation="vertical">
                       <div className="text-2xl font-medium 
                       flex gap-4 items-center my-4">
                        <BsArrowRightSquare />{skill.titleskills}</div>
+                       </ScrollArea>
                       <ul className="grid grid-cols-2 
                       sm:grid-cols-1 
                       xl:grid-cols-4 gap-4 mb-12 ">
                         {
                           skill.devskills.map((skilogo,index)=>{
                             return(
+                              
                               <li className="xl:h-[100px] h-[180px] pointer-events-auto bg-white/5 hover:text-yellow-200 hover:transition-all hover:duration-200 hover:bg-accent/45 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5" key={index}>
                                 
                                   <p className="text-5xl xl:text-4xl">{skilogo.icon}</p>
                                   <h3 className="text-2xl">{skilogo.name}</h3>
                                   
                               </li>
+                              
                             )
                           })
                         }
                       </ul>
                   </div>)
+                  
                  })}
               </ul>
                </div>

@@ -5,8 +5,8 @@ function TaskModal({ tasks, isOpen, onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center model-bg-modal">
-      <div className="bg-primary p-6 rounded-lg max-w-2xl">
-        <h2 className="text-2xl font-bold mb-4">Tous les taches</h2>
+      <div className="bg-primary p-6 rounded-lg  w-[80%]">
+        <h2 className="text-3xl font-bold mb-7">Tous les taches</h2>
         <ul className="list-disc list-item">
          
             <li className="mb-2 flex">
