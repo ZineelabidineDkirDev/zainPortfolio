@@ -534,15 +534,18 @@ const Resume = () => {
                <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{skills.title}</h3>
-               <p className="max-full text-justify font-medium space-x-2 leading-8 text-white/60 mx-auto xl:mx-0">
+               <p className="max-full text-justify font-medium space-x-2 leading-8 text-white/60 mx-auto
+                xl:mx-0">
                 {skills.description}
                 </p>
               </div>
-              <ul className="mb-16">
+              <ScrollArea className="h-[450px] leading-8"  orientation="vertical">
+              <ul className="mb-10">
                  {skills.skillsList1.map((skill,index)=>{
-                  return (<div key={index}>
+                  return (
+                  <div  key={index}>
                       <div className="text-2xl font-medium 
-                      flex gap-4 items-center my-4">
+                      flex gap-4 items-center my-2">
                        <BsArrowRightSquare />{skill.titleskills}</div>
                       <ul className="grid grid-cols-2 
                       sm:grid-cols-1 
@@ -566,6 +569,7 @@ const Resume = () => {
                   </div>)
                  })}
               </ul>
+              </ScrollArea>
                </div>
             </TabsContent>
             <TabsContent value="certif" className="xl:w-full mx-[30px] w-[300px] xl:mx-auto">
@@ -616,18 +620,21 @@ const Resume = () => {
                 {profile.description}
                 </p>
               </div>
+              <ScrollArea orientation="vertical" className="gap-4 h-[450px] leading-8">
               <ul className="mb-16 grid grid-cols-1 items-center leading-10 xl:leading-7 text-center xl:text-left xl:items-start xl:grid-cols-3 gap-9">
                 {profile.info.map((pro,index)=>{
-
+               
                   return(
                     <div  key={index} className=" border-l-accent border-r-transparent border-4 border-y-transparent bg-white/5  xl:px-3 xl:py-4 py-2">
                       <li className="text-4xl flex justify-center xl:justify-start mb-4 text-yellow-500">{pro.fieldName}</li>
                       <li>{pro.fieldValue}</li>
                     </div>
                   )
-
+                  
                 })}
+                
               </ul>
+              </ScrollArea>
                </div>
             </TabsContent>
           </div>
