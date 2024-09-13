@@ -20,15 +20,15 @@
   }
 
   .shape img {
-  @apply absolute w-full -z-10 opacity-35;
+  @apply absolute w-auto -z-10 opacity-35;
 }
 
 .shape1 {
-  @apply right-[-160px] top-[60px] h-[170px] w-[170px] opacity-[0.5] origin-center;
+  @apply right-[-160px] top-[60px] opacity-[0.5] origin-center;
 }
 
 .shape2 {
-  @apply left-[-370px] top-[-120px] w-[90px] h-[90px] opacity-[0.5] origin-center;
+  @apply left-[-370px] top-[-120px]  opacity-[0.5] origin-center;
 } 
 
 .shape3 {
@@ -40,7 +40,7 @@
 }
 
 .shape5 {
-  @apply left-[500px] top-0 w-[300px] h-[300px] opacity-0 origin-center;
+  @apply left-[500px] top-0 opacity-0 origin-center;
 }
 
 .text-outline {

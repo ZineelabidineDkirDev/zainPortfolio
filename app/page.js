@@ -46,7 +46,7 @@ const Home = () => {
     const timer = setTimeout(handleTyping,30);
 
     return () => clearTimeout(timer);
-  }, [charIndex, isDeleting, index, strings]);
+  }, [charIndex, isDeleting, index]);
 
   return (
   <section className="relative xl:h-screen xl:mx-32
@@ -96,10 +96,10 @@ const Home = () => {
   <div>
     <Stats />
   </div>
-    <div className="shape">
-      <Image className="shape1 animate-shape1" src="images/shape.svg" alt=""/>
-      <Image className="shape2 animate-shape2" src="images/shape.svg" alt=""/>
-      <Image className="shape5 animate-shape5" src="images/shape.svg" alt=""/>
+    <div className="shape ">
+      <Image className="right-[200px] top-[60px] opacity-[0.5] origin-center w-[300px] h-[300px] animate-shape1" src="images/shape.svg" width={7} height={7} alt=""/>
+      <Image className="left-[-370px] top-[-120px]  opacity-[0.5] w-[200px] h-[200px] origin-center animate-shape2" src="images/shape.svg" width={9} height={9} alt=""/>
+      <Image className="left-[100px] top-0 opacity-0 origin-center w-[300px] h-[300px] animate-shape5" src="images/shape.svg" width={3} height={3} alt=""/>
     </div>
 </section>
   );

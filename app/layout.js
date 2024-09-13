@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.variable}>
+      <body className={`${raleway.variable} overflow-x-hidden`}>
         <Header/>
         <StairTransition />
         <PageTransition>

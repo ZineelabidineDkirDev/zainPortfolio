@@ -445,7 +445,7 @@ const Resume = () => {
     className="min-h-[80vh] flex items-center 
     justify-center py-14 xl:py-0 mt-2 "
     >
-      <div className="mx-auto">
+      <div className="xl:mx-auto mx-[30px]">
 
         <Tabs defaultValue="experince"
               className="grid grid-cols-1 p-3 mx-10 w-[400px] 
@@ -461,7 +461,7 @@ const Resume = () => {
 
           <div className="min-h-[70vh] w-[400px] xl:mx-0 xl:w-full xl:-mt-[350px] xl:ml-96 mb-16">
             <TabsContent value="experience" 
-            className="w-full ">
+            className="xl:w-full mx-[30px] w-[300px] xl:mx-auto">
                <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-full text-justify font-medium space-x-2 leading-8 text-white/60 mx-auto xl:mx-0">
@@ -506,7 +506,7 @@ const Resume = () => {
                 </ScrollArea>
                </div>
             </TabsContent>
-            <TabsContent value="education" className="w-full">
+            <TabsContent value="education" className="xl:w-full mx-[30px] w-[300px] xl:mx-auto">
                <div className="flex flex-col gap-[30px] text-center xl:text-left">
                <h3 className="text-4xl font-bold">{education.title}</h3>
                <p className="max-full text-justify font-medium space-x-2 leading-8 text-white/60 mx-auto xl:mx-0">
@@ -530,7 +530,7 @@ const Resume = () => {
                 </ScrollArea>
                </div>
             </TabsContent>
-            <TabsContent value="skills" className="w-full">
+            <TabsContent value="skills" className="xl:w-full mx-[5px] w-[350px] xl:mx-auto">
                <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{skills.title}</h3>
@@ -568,7 +568,7 @@ const Resume = () => {
               </ul>
                </div>
             </TabsContent>
-            <TabsContent value="certif" className="w-full">
+            <TabsContent value="certif" className="xl:w-full mx-[30px] w-[300px] xl:mx-auto">
             <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{skills.title}</h3>
@@ -608,7 +608,7 @@ const Resume = () => {
               </ul>
                </div>
             </TabsContent>
-            <TabsContent value="about" className="w-full">
+            <TabsContent value="about" className="xl:w-full mx-[30px] w-[300px] xl:mx-auto">
             <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{profile.title}</h3>

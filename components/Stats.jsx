@@ -33,8 +33,8 @@ const Stats = () => {
              ease: "easeIn"},
     }}
     className={jetBrainsMono.variable}>
-    <div className=" container mx-auto xl:mt-[-140px]">
-            <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
+    <div className=" container -mt-[100px] xl:mx-auto xl:mt-[-140px] mx-[0px] grid ">
+            <div className="flex flex-wrap gap-5 xl:gap-6 max-w-[90vw] xl:max-w-none">
                 {stats.map((item, index)=>{
                    return <div key={index} 
                    className="flex-1 flex gap-4 items-center justify-center xl:justify-start">

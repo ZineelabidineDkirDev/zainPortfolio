@@ -7,11 +7,11 @@ import Image from 'next/image'
 
 
 const Header = () => {
-  return (<hedear className="px-8 xl:mx-32 xl:py-12 text-white">
-     <div className="container mx-auto flex justify-between items-center">
+  return (<hedear className="px-8  xl:mx-32 xl:py-12 text-white ">
+     <div className="container xl:mx-auto none ml-0 xl:flex justify-between items-center">
       <Link href="/">
       <Image src="/images/hlogo.png" alt="logo" width={60} height={60} 
-                className="object-contain p-2"/>
+                className="object-contain p-2 "/>
       </Link>
       <div className="sm:hidden xl:flex items-center gap-8">
         <Nav />

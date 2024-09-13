@@ -80,11 +80,11 @@ const Contact = () => {
       {/* Toaster for toast notifications */}
       <Toaster position="top-right" reverseOrder={false} /> 
 
-      <div className="container ">
+      <div className="container xl:w-full mx-[10px] w-[350px] xl:mx-auto">
         <div className="flex flex-col xl:flex-row gap-[80px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-8 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl font-bold text-white">Let’s Create Something Great Together!</h3>
+              <h3 className="text-2xl xl:text-4xl font-bold text-white">Let’s Create Something Great Together!</h3>
               <p className="text-white/60 leading-7">
                 Need help or just want to explore new opportunities? Contact us, and we’ll guide you through every step. We can’t wait to hear from you!
               </p>
@@ -155,8 +155,8 @@ const Contact = () => {
               {info.map((item,index)=>{
                 return(
                   <li key={index} className="flex gap-6 items-center">
-                    <div className="w-[32px] h-[32px] xl:w-[73px] xl:h-[73px] bg-accent text-white rounded-lg flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
+                    <div className="w-[42px] h-[42px] xl:w-[73px] xl:h-[73px] bg-accent text-white rounded-lg flex items-center justify-center">
+                      <div className="text-xl xl:text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
