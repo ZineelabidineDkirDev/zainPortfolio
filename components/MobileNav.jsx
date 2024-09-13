@@ -35,30 +35,30 @@ const MobileNav = () => {
   
   return (
     <Sheet className="overflow-x-hidden">
-      <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
-      </SheetTrigger>
-      <SheetContent className="flex flex-col justify-center items-center gap-8">
-        <div className="mt-2 mb-20 text-center text-2xl">
-          <Link href="/">
-          <Image src="/images/hlogo.png" width={60} height={60} alt=""
-                className="object-contain"/>
-          </Link>
-        </div>
-        <nav className="flex flex-col justify-center items-center gap-8 ">
-          {links.map((link, index) => (
-            <Link
-              href={link.path}
-              key={index}
-              className={`text-xl capitalize 
-                transition-all ${pathname === link.path ? 'text-accent font-semibold border-b-2 pb-1 border-accent' : ''}`}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-      </SheetContent>
-    </Sheet>
+  <SheetTrigger className="flex justify-center items-center">
+    <CiMenuFries className="text-[32px] text-accent" />
+  </SheetTrigger>
+  <SheetContent className="fixed inset-0 z-50 flex flex-col justify-center items-center gap-8 bg-black bg-opacity-90">
+    <div className="mt-2 mb-20 text-center text-2xl">
+      <Link href="/">
+        <Image src="/images/hlogo.png" width={60} height={60} alt="logo" className="object-contain" />
+      </Link>
+    </div>
+    <nav className="flex flex-col justify-center items-center gap-8">
+      {links.map((link, index) => (
+        <Link
+          href={link.path}
+          key={index}
+          className={`text-xl capitalize 
+            transition-all ${pathname === link.path ? 'text-accent font-semibold border-b-2 pb-1 border-accent' : ''}`}
+        >
+          {link.name}
+        </Link>
+      ))}
+    </nav>
+  </SheetContent>
+</Sheet>
+
   );
 };
 

@@ -43,6 +43,10 @@
   @apply left-[500px] top-0 opacity-0 origin-center;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .text-outline {
   -webkit-text-stroke: 1px #fff; 
   color: transparent;
