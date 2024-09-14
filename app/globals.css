@@ -52,6 +52,10 @@
   color: transparent;
 }
 
+.bg-mood:nth-child(0):hover{
+  background:orange;
+  color:white
+}
 .text-outline-hover {
   -webkit-text-stroke: 1px #D9FF00; 
   color: transparent; 
@@ -89,5 +93,27 @@
     opacity:.060
   }
 
+
+  @layer utilities {
+    .gridline li:nth-child(n) {
+      @apply bg-red-500;
+    }
+    .gridline li:nth-child(n+1) {
+      @apply bg-green-500;
+    }
+    .gridline li:nth-child(3) {
+      @apply bg-blue-500;
+    }
+    .gridline li:nth-child(4) {
+      @apply bg-yellow-500;
+    }
+    .gridline li:nth-child(5) {
+      @apply bg-purple-500;
+    }
+    .gridline li:nth-child(6) {
+      @apply bg-pink-500;
+    }
+    /* Continue with more colors as needed */
+  }
 }
 

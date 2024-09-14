@@ -76,7 +76,12 @@ const Home = () => {
           variant="outline" 
           size="lg"
           className="rounded-full border-white text-white flex items-center gap-2 transition duration-500">
-            <span>Download CV</span>
+            <span>
+              <a 
+                href="/ZINE EL ABIDINE DKIR Elmoubtakir CV 2025.pdf" // The path to the CV file in the public folder
+                download="ZINE EL ABIDINE DKIR Elmoubtakir CV 2025" // The file name the user will download
+              >Download CV</a>
+            </span>
             <IoMdDownload className="text-xl" />
           </Button>
           <div className="mb-8 xl:mb-0 ">

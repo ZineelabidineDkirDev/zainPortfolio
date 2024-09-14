@@ -21,7 +21,7 @@ import { LiaFileContractSolid } from "react-icons/lia";
 
 const profile = { 
   title:"Profile",
-  description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit sem, porta euismod diam quis, tempor interdum sapien. Morbi blandit lacus vitae lobortis dignissim.",
+  description:"En tant que développeur full stack spécialisé en dotNet, ReactJs & Angular,avec plus de trois ans d'expérience et une solide formation, je suis actuellement à la recherche d'une opportunité professionnelle enrichissante. Mon objectif est de renforcer mes compétences techniques et de contribuer à des projets innovants.",
   info:[
     {
       fieldName: <CgProfile />,
@@ -218,7 +218,7 @@ const skills = {
       titleskills: "Web Development",
       devskills:[
         {
-          icon: <FaHtml5 />,
+          icon: <FaHtml5/>,
           name: "html5",
         },
         {
@@ -403,6 +403,7 @@ export function Tasking({ task }) {
     setIsReadMore(!isReadMore); // Toggle between true and false for each task
   };
 
+  
   return (
     <div>
       <p>
@@ -534,39 +535,43 @@ const Resume = () => {
                <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{skills.title}</h3>
-               <p className="max-full text-justify font-medium space-x-2 leading-8 text-white/60 mx-auto
-                xl:mx-0">
-                {skills.description}
-                </p>
+              
               </div>
               <ScrollArea className="h-[450px] leading-8"  orientation="vertical">
               <ul className="mb-10">
                  {skills.skillsList1.map((skill,index)=>{
+                  
                   return (
-                  <div  key={index}>
-                      <div className="text-2xl font-medium 
-                      flex gap-4 items-center my-2">
-                       <BsArrowRightSquare />{skill.titleskills}</div>
-                      <ul className="grid grid-cols-2 
-                      sm:grid-cols-1 
-                      xl:grid-cols-4 gap-4 mb-12 ">
-                        {
-                          skill.devskills.map((skilogo,index)=>{
-                            return(
-                              <div key={index}>
-                                <li className="xl:h-[100px] h-[180px] pointer-events-auto bg-white/5 hover:text-yellow-200 hover:transition-all hover:duration-200 hover:bg-accent/45 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5" 
-                              >
-                                
-                                  <p className="text-5xl xl:text-4xl">{skilogo.icon}</p>
-                                  <h3 className="text-2xl">{skilogo.name}</h3>
-
-                              </li>
-                              </div>
-                            )
-                          })
-                        }
-                      </ul>
-                  </div>)
+                    <div key={index}>
+                    <div className="text-2xl font-medium flex gap-4 items-center my-2">
+                      <BsArrowRightSquare />{skill.titleskills}
+                    </div>
+                    <ul className="grid grid-cols-2 sm:grid-cols-1 xl:grid-cols-4 gap-4 mb-12">
+                      {skill.devskills.map((skilogo, index) => {
+                        // Define colors array
+                        const colors = [
+                         
+                          { col: "hover:bg-accent-hover", texto: "hover:text-yellow-200" },
+                         
+                        ];
+                  
+                        // Access color properties correctly
+                        const bgColor = colors[index % colors.length].col; 
+                        const textColor = colors[index % colors.length].texto;
+                  
+                        return (
+                          <li 
+                            key={index} 
+                            className={`xl:h-[100px] h-[180px] pointer-events-auto ${textColor} bg-white/5 ${bgColor} hover:transition-all hover:duration-200 py-6 my-3 flex flex-col xl:flex-row justify-center items-center gap-5`}
+                          >
+                            <p className="text-5xl xl:text-4xl">{skilogo.icon}</p>
+                            <h3 className="text-2xl">{skilogo.name}</h3>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                  )
                  })}
               </ul>
               </ScrollArea>
@@ -625,7 +630,8 @@ const Resume = () => {
                 {profile.info.map((pro,index)=>{
                
                   return(
-                    <div  key={index} className=" border-l-accent border-r-transparent border-4 border-y-transparent bg-white/5  xl:px-3 xl:py-4 py-2">
+                    <div  key={index} className=" border-l-accent border-r-transparent border-4 
+                    border-y-transparent bg-white/5  xl:px-3 xl:py-4 py-2">
                       <li className="text-4xl flex justify-center xl:justify-start mb-4 text-yellow-500">{pro.fieldName}</li>
                       <li>{pro.fieldValue}</li>
                     </div>
