@@ -102,9 +102,9 @@ const Home = () => {
     <Stats />
   </div>
     <div className="shape ">
-      <Image className="right-[200px] top-[60px] opacity-[0.5] origin-center w-[300px] h-[300px] animate-shape1" src="images/cc.svg" width={7} height={7} alt=""/>
-      <Image className="left-[-370px] top-[-120px]  opacity-[0.5] w-[200px] h-[200px] origin-center animate-shape2" src="images/cc.svg" width={9} height={9} alt=""/>
-      <Image className="left-[100px] top-0 opacity-0 origin-center w-[300px] h-[300px] animate-shape5" src="images/cc.svg" width={3} height={3} alt=""/>
+      <Image className="right-[200px] top-[60px] opacity-[0.8] origin-center w-[300px] h-[300px] animate-shape1" src="images/cc.svg" width={7} height={7} alt=""/>
+      <Image className="left-[600px] top-[330px]  opacity-[0.5]  w-[200px] h-[200px] origin-center animate-shape3" src="images/cc.svg" width={9} height={9} alt=""/>
+      <Image className="left-[460px] top-0 opacity-[0.8] origin-center w-[300px] h-[300px] animate-shape5" src="images/cc.svg" width={3} height={3} alt=""/>
     </div>
 </section>
   );

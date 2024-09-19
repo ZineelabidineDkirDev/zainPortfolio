@@ -63,12 +63,12 @@ module.exports = {
         },
         shape2: {
           '100%': {
-            transform: 'translate(1200px, -400px)',
+            transform: 'rotate(360deg)',
           },
         },
         shape3: {
           '100%': {
-            transform: 'translate(300px, -600px) rotate(360deg)',
+            transform: 'rotate(360deg)',
           },
         },
         shape4: {
@@ -79,7 +79,7 @@ module.exports = {
         shape5: {
           '100%': {
             opacity: 1,
-            transform: 'translate(0, -150px) rotate(720deg)',
+            transform: 'rotate(720deg)',
           },
         },
       },
