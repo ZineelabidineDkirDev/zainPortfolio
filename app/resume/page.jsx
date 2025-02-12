@@ -177,6 +177,20 @@ const experience = {
         "- Ma maîtrise des technologies clés, telles que C#, WPF et XAML, ainsi que ma compréhension approfondie des architectures MVC (Modèle-Vue-Contrôleur) et MVVM (Modèle-Vue-Modèle), m’ont permis de concevoir une application robuste et modulaire",
       ]
     },
+     {
+      company: "Cnexia",
+      iconexp: "https://www.wetech.ma/images/300/ca-hnpnmuaypmtaq5vvuvvcf5n4rnisgt17012022062129.jpg",
+      location: "Salé - Mororcco",
+      duration: "Jully 2022 - Juin 2024",
+      positon :"Data Analyst ",
+      descexp:"Collecte et Préparation des Données et prise de Décision et Support Stratégique",
+      tasks:[
+        "- Développement de scripts pour automatiser la collecte et l’analyse des données.",
+        "- Amélioration des processus de gestion des données pour gagner en efficacité.",
+        "- Mon rôle exigeait une collaboration étroite avec une équipe multidisciplinaire, ce qui a renforcé ma capacité à travailler efficacement en équipe et à communiquer de manière transparente avec les membres de l’équipe.",
+        "- Ma maîtrise des technologies clés, telles que C#, WPF et XAML, ainsi que ma compréhension approfondie des architectures MVC (Modèle-Vue-Contrôleur) et MVVM (Modèle-Vue-Modèle), m’ont permis de concevoir une application robuste et modulaire",
+      ]
+    },
   ]
 }
 
