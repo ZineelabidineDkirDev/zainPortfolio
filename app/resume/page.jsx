@@ -10,7 +10,7 @@ import MagicTitle from "@/components/ui/magicTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
 
 import { CgProfile } from "react-icons/cg";
-import { IoIosPhonePortrait } from "react-icons/io";
+import { IoIosPhoneLandscape, IoIosPhonePortrait } from "react-icons/io";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { TfiSkype } from "react-icons/tfi";
@@ -29,7 +29,11 @@ const profile = {
     },
     {
       fieldName: <IoIosPhonePortrait />,
-      fieldValue: "(+212) 624 438 140 \n (+212) 602 151 702",
+      fieldValue: "(+212) 602 151 702",
+    },
+    {
+      fieldName: <IoIosPhoneLandscape />,
+      fieldValue: "(+212) 602 151 702",
     },
     {
       fieldName: <MdOutlineAttachEmail />,
