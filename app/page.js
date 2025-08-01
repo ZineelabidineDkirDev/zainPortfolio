@@ -79,7 +79,7 @@ const Home = () => {
             <span>
               <a 
                 href="/CV ZINE EL ABIDINE DKIR FULL STACK SE" // The path to the CV file in the public folder
-                download="ZINE EL ABIDINE DKIR CV" // The file name the user will download
+                download="CV ZINE EL ABIDINE DKIR FULL STACK SE" // The file name the user will download
               >Download CV</a>
             </span>
             <IoMdDownload className="text-xl" />
