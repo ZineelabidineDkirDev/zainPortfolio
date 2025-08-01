@@ -78,8 +78,8 @@ const Home = () => {
           className="rounded-full border-white text-white flex items-center gap-2 transition duration-500">
             <span>
               <a 
-                href="\CV ZINE EL ABIDINE DKIR FULL STACK SE" // The path to the CV file in the public folder
-                download="CV ZINE EL ABIDINE DKIR FULL STACK SE" // The file name the user will download
+                href="\CV ZINE EL ABIDINE DKIR FULL STACK SE.pdf" // The path to the CV file in the public folder
+                download="CV ZINE EL ABIDINE DKIR FULL STACK SE.pdf" // The file name the user will download
               >Download CV</a>
             </span>
             <IoMdDownload className="text-xl" />
