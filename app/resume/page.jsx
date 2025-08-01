@@ -29,7 +29,7 @@ const profile = {
     },
     {
       fieldName: <IoIosPhonePortrait />,
-      fieldValue: "(+212) 602 151 702",
+      fieldValue: "(+212) 624 438 140",
     },
     {
       fieldName: <IoIosPhoneLandscape />,
