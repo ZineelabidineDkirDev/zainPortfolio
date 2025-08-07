@@ -15,10 +15,10 @@ const Nav = () => {
   const pathname = usePathname();
   
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-4">
       {links.map((link, index) => (
         <Link 
-          key={index}
+          key={index} 
           href={link.path}
           className={`capitalize font-medium hover:text-indigo-400 transition-all ${pathname === link.path ? "text-indigo-400 border-b-2 border-indigo-400" : ""}`}
         >
