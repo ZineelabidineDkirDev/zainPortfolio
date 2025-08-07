@@ -10,7 +10,7 @@ import MagicTitle from "@/components/ui/magicTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
 
 import { CgProfile } from "react-icons/cg";
-import { IoIosPhoneLandscape, IoIosPhonePortrait } from "react-icons/io";
+import { IoIosMegaphone, IoIosPhoneLandscape, IoIosPhonePortrait } from "react-icons/io";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { TfiSkype } from "react-icons/tfi";
@@ -32,8 +32,8 @@ const profile = {
       fieldValue: "(+212) 624 438 140",
     },
     {
-      fieldName: <IoIosPhoneLandscape />,
-      fieldValue: "(+212) 602 151 702",
+      fieldName: <IoIosMegaphone />,
+      fieldValue: "(+212) 602 151 750",
     },
     {
       fieldName: <MdOutlineAttachEmail />,
@@ -87,7 +87,7 @@ const experience = {
       ]
     },
     {
-      company: "Elly insurrance",
+      company: "Elly-asurrance",
       iconexp: "/exp/logoelly.png",
       location: "Salé - Mororcco",
       duration: "Jully 2019 - Juin 2020",
