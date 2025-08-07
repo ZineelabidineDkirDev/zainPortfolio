@@ -452,7 +452,7 @@ const Resume = () => {
 
   return (
 
-    <section>
+    <section className="my-28">
             <MagicTitle title="My Resume"/>
 
     
