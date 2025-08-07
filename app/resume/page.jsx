@@ -28,7 +28,7 @@ const profile = {
       fieldValue: "Zine el Abidine Elmoubtakir",
     },
     {
-      fieldName: <IoIosPhonePortrait />,
+      fieldName: <PiWhatsappLogo />,
       fieldValue: "(+212) 624 438 140",
     },
     {
@@ -413,6 +413,7 @@ import { IoMdSchool } from "react-icons/io";
 import { AiTwotoneExperiment } from "react-icons/ai";
 import TaskModal from "@/components/ui/TaskModal";
 import { GitBranch } from "lucide-react";
+import { PiWhatsappLogo } from "react-icons/pi";
 
 export function Tasking({ task }) {
   const [isReadMore, setIsReadMore] = useState(false); // Initialize state for each task
