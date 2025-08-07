@@ -28,8 +28,8 @@ const Work = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
-      {/* <MagicTitle title="Portfolio" /> */}
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 my-28">
+      <MagicTitle title="Portfolio" /> 
 
       <div className="container mx-auto mt-5">
         <div className="flex flex-col xl:flex-row justify-center xl:gap-[30px]">

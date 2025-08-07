@@ -48,7 +48,7 @@ const services = () => {
     className="flex flex-col 
     xl:mx-32 xl:p-10
      xl:min-h-[80vh] justify-center py-12 ">
-      <div className="container mx-auto">
+      <div className="container mx-auto my-28">
       <MagicTitle title="Our Services"/>
        <div
        
