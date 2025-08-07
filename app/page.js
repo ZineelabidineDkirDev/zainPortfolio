@@ -50,7 +50,7 @@ const Home = () => {
 
   return (
   <section className="relative xl:h-screen xl:mx-32
-   h-[900px] overflow-hidden xl:overflow-hidden rounded ">
+   h-[900px] overflow-hidden xl:overflow-hidden rounded my-28">
    
   <div className="absolute inset-0 z-0 bg-overlay overflow-hidden from-primary via-transparent to-accent/30 animate-slide"></div>
   <div className="container relative z-10 mx-auto xl:screen h-screen xl:h-screen mt-[-50px] xl:mt-[-40px]">
