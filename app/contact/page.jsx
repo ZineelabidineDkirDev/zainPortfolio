@@ -73,7 +73,7 @@ const Contact = () => {
         opacity: 1,
         transition: { delay: 0.5, duration: 2.2, ease: easeIn },
       }}
-      className="py-6 xl:mx-[144px] my-16"
+      className="py-6 xl:mx-[144px] my-32"
     >
       {/* <MagicTitle title="Contact" /> */}
       
