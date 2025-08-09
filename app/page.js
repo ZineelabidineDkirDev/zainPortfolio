@@ -64,7 +64,7 @@ const Home = () => {
         <span className="text-md mb-8">Full Stack Developer / UI UX Web Designer</span>
         <h1 className="h2 mb-2 leading-8 xl:leading-[60px]">
           <span className="h2 ">{text}</span> <br />
-          <span className="name_portfolio h1 mt-32 text-accent/90 uppercase">
+          <span className="name_portfolio h1 mt-32 text-[#4727ff] uppercase">
             Zayn <b className="font-bold">El Moubtakir</b>
           </span>
         </h1>
