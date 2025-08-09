@@ -27,7 +27,7 @@ const Header = () => {
         scrolled ? 'bg-[#3C0D9E] text-white shadow-md' : 'bg-transparent text-white'
       }`}
     >
-      <div className="container xl:mx-auto ml-0 flex justify-between items-center mx-40">
+      <div className="container xl:mx-28 ml-0 flex justify-between items-center mx-40">
         {/* Logo */}
         <Link href="/">
           <Image
