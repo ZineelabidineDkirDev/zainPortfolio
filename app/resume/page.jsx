@@ -452,7 +452,7 @@ const Resume = () => {
 
   return (
 
-    <section className="my-28">
+    <section className="xl:my-28">
             <MagicTitle title="My Resume"/>
 
     
@@ -463,9 +463,9 @@ const Resume = () => {
       transition:{delay:2.5, duration:.5, ease:'easeInOut'},
     }}
     className="min-h-[80vh] flex items-center 
-    justify-center xl:py-14 xl:py-0 xl:mt-2 "
+    justify-center xl:py-14 py-0 xl:mt-2 "
     >
-      <div className="xl:mx-auto mx-[30px]">
+      <div className="mx-auto xl:mx-[30px]">
 
         <Tabs defaultValue="experince"
               className="grid grid-cols-1 p-3 mx-10 w-[400px] 

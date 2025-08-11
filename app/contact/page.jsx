@@ -73,19 +73,19 @@ const Contact = () => {
         opacity: 1,
         transition: { delay: 0.5, duration: 2.2, ease: easeIn },
       }}
-      className="py-6 xl:mx-[144px] my-32"
+      className="py-6 xl:mx-[144px] xl:my-32"
     >
       {/* <MagicTitle title="Contact" /> */}
       
       {/* Toaster for toast notifications */}
       <Toaster position="top-right" reverseOrder={false} /> 
 
-      <div className="container xl:w-full mx-[10px] w-[350px] xl:mx-auto">
+      <div className="container xl:w-full w-[350px] xl:mx-auto">
         <div className="flex flex-col xl:flex-row gap-[80px]">
-          <div className="xl:h-[54%] order-2 xl:order-none">
+          <div className="xl:h-[54%] h-auto order-2 xl:order-none">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-8 bg-[#27272c] rounded-xl">
-              <h3 className="text-2xl xl:text-4xl font-bold text-white">Let’s Create Something Great Together!</h3>
-              <p className="text-white/60 leading-7">
+              <h3 className="text-xl xl:text-4xl font-bold text-white xl:text-left text-center">Let’s Create Something Great Together!</h3>
+              <p className="text-white/60 leading-7 xl:text-left text-center">
                 Need help or just want to explore new opportunities? Contact us, and we’ll guide you through every step. We can’t wait to hear from you!
               </p>
 
@@ -144,7 +144,7 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
               />
 
-              <Button type="submit" size="md" className="max-w-40 rounded-full">
+              <Button type="submit" size="md" className="max-w-80 xl:max-w-40 rounded-lg">
                 Send Message
               </Button>
             </form>
