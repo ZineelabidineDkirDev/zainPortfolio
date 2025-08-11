@@ -23,11 +23,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 xl:w-full max-sm:w-full max-sm:py-11 xl:flex items-center gap-8 px-6 xl:py-5 z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-[#352093] text-[#e7e2ff] xl:py-1 transition-all duration-300 shadow-md' : 'bg-transparent text-white'
+      className={`xl:fixed lg:items-center top-0 left-0 xl:w-full max-sm:w-full max-lg:w-full max-sm:py-11 xl:flex items-center gap-8 px-6 max-lg:py-7 xl:py-5 z-50 transition-colors duration-300 ${
+        scrolled ? 'xl:bg-[#352093] xl:text-[#e7e2ff]  xl:py-1 transition-all duration-300 shadow-md' : 'bg-transparent text-white'
       }`}
     >
-      <div className="container xl:mx-28 ml-0 flex justify-between items-center mx-40">
+      <div className="container xl:mx-28 ml-0 max-lg:w-full  flex justify-between items-center lg:mx-10 mx-40 ">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -40,7 +40,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="max-sm:hidden xl:flex items-center gap-8">
+        <div className="max-sm:hidden xl:flex items-center gap-8 lg:flex md:flex lg:items-center">
           <Nav />
           <Link href="/contact">
             <Button className="px-5 uppercase duration-500 ease-in-out py-2 m-2 rounded-xl hover:bg-indigo-950 bg-accent">

@@ -50,11 +50,11 @@ const Home = () => {
 
   return (
   <section className="relative xl:h-screen xl:mx-32
-   h-[900px] overflow-hidden xl:overflow-hidden rounded my-20">
+   h-[900px] overflow-hidden xl:overflow-hidden rounded xl:my-20">
    
   <div className="absolute inset-0 z-0 bg-overlay overflow-hidden from-primary via-transparent to-accent/30 animate-slide"></div>
   <div className="container relative z-10 mx-auto xl:screen h-screen xl:h-screen mt-[-50px] xl:mt-[-40px]">
-    <div className="flex flex-col xl:flex-row mb-8 items-center justify-between pt-24 xl:pt-32 xl:pb-24 xl:gap-10">
+    <div className="flex flex-col xl:flex-row xl:mb-8 items-center justify-between pt-24 xl:pt-32 xl:pb-24 xl:gap-10">
       <motion.div initial={{opacity:0}} animate={{opacity:1, 
                 transition : {delay: 2,
                    duration: 0.8,
