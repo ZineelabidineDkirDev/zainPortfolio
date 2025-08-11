@@ -7,7 +7,7 @@ import { FaPaintBrush, FaPalette, FaPenNib } from 'react-icons/fa';
 
 
 
-const service =[
+const service2 =[
   {
     num:'01',
     icon:<FaDesktop />,
@@ -33,11 +33,11 @@ const service =[
     descripton:'Implementing effective digital marketing strategies to boost online presence and drive sales. Expertise in SEO, social media marketing, and e-commerce solutions that convert visitors into customers.',
   },
 ]
-const services = () => {
+const services2 = () => {
   return (
     <section className="xl:min-w-[30px] xl:min-h-auto mt-[10vw]">
       <div className="xl:flex px-32 gap-8 items-center justify-center">
-        {service.map((item,index)=>{
+        {service2.map((item,index)=>{
           return <div className="p-4 bg-accent hover:bg-indigo-900 cursor-pointer transition-all
            duration-500 ease-in-out h-auto xl:w-[300px] xl:h-auto rounded-lg
            text-white xl:my-0 xl:mx-0 my-5 mx-16" key={index}>
@@ -52,4 +52,4 @@ const services = () => {
   )
 }
 
-export default services
+export default services2

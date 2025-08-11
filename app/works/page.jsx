@@ -28,41 +28,41 @@ const Work = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 my-28">
+      className="min-h-[80vh] flex flex-col justify-center xl:py-12 xl:px-0 xl:my-28">
       <MagicTitle title="Portfolio" /> 
 
       <div className="container mx-auto mt-5">
-        <div className="flex flex-col xl:flex-row justify-center xl:gap-[30px]">
+        <div className="flex flex-col xl:flex-row xl:justify-center xl:gap-[30px]">
           
           <div className="w-full xl:w-[30%] gap-[200px] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             {/* Active Project details */}
             {projects.length > 0 && (
               <div className="flex flex-col h-[50%]">
-                <div className="text-7xl xl:text-9xl leading-none font-extrabold text-transparent text-outline">
+                <div className="text-7xl xl:text-9xl xl:text-left text-center leading-none font-extrabold text-transparent text-outline">
                   {projects[activeIndex].num}
                 </div>
-                <h2 className="text-[32px] font-bold text-white group-hover:text-accent leading-[70px] transition-all duration-500 capitalize">
+                <h2 className="xl:text-[32px] text-[25px] font-bold xl:text-left text-center text-white group-hover:text-accent leading-[70px] transition-all duration-500 capitalize">
                   {projects[activeIndex].title}
                 </h2>
-                <p className="text-xl text-yellow-400
+                <p className="text-xl text-yellow-400 xl:text-left text-center
                  font-semibold ml-10">
-                  <hr className="top-5 -left-10 relative w-[30px] h-1.5 border-yellow-400"/>
+                  <hr className="top-5 xl:-left-10 relative w-[30px] h-1.5 border-yellow-400"/>
                   {projects[activeIndex].Ctg}
-                  <hr className="-top-3 left-48 relative w-[30px] h-1.5 border-yellow-400"/>
+                  <hr className="-top-3 xl:left-48 relative w-[30px] h-1.5 border-yellow-400"/>
                 </p>
-                <p className="text-white/60 leading-7 text-justify text-lg">
+                <p className="text-white/60 leading-7  xl:text-left text-center text-lg">
                   {projects[activeIndex].description.length > 30
                     ? projects[activeIndex].description.slice(0, 190) + "..."
                     : projects[activeIndex].description}
                 </p>
 
                 {/* Display project tags */}
-                <ul className="flex gap-4">
+                <ul className="flex gap-4 xl:text-left text-center items-center">
                   {getProjectTags(projects[activeIndex].id).length > 0 ? (
                     getProjectTags(projects[activeIndex].id).map((tag, index) => (
                       <li
                         key={index}
-                        className="bg-accent hover:bg-accent-hover text-white px-3 my-4 flex-nowrap 
+                        className="bg-accent xl:text-left text-center hover:bg-accent-hover text-white px-3 my-4 flex-nowrap 
                         flex gap-4 py-2 rounded-2xl font-light">
                         {tag.TagName}
                       </li>
@@ -74,7 +74,7 @@ const Work = () => {
 
                 <div className="border border-white/30"></div>
 
-                <div className="flex items-center gap-4 mt-4">
+                <div className="flex items-center xl:justify-normal justify-center gap-4 mt-4 xl:py-2 py-8 ">
                   <a href={projects[activeIndex].link}>
                     <TooltipProvider delayDuration={200}>
                       <Tooltip>

@@ -46,7 +46,7 @@ const services = () => {
         transiton: { delay: .4, duration: 6, ease:"easeIn"},
        }}
     className="flex flex-col 
-    xl:mx-32 xl:p-10
+    xl:mx-28 xl:p-10
      xl:min-h-[80vh] justify-center py-12 ">
       <div className="container mx-auto my-28">
       <MagicTitle title="Our Services"/>
@@ -66,9 +66,9 @@ const services = () => {
         className="text-7xl text-outline text-transparent
                font-extrabold group-hover:text-outline-hover
                transition-all duration-500 ease-in-out">{item.num}</div>
-              {/* <span className="flex 
-              items-start justify-start text-4xl group-hover:text-accent">
-                {item.icon}</span> */}
+               <span className="flex 
+              items-center -ml-48 text-4xl text-outline-hover">
+                {item.icon}</span> 
               <Link href={item.href} className="w-[70px] h-[70px] 
               rounded-full bg-white text-accent text-xl
                group-hover:bg-accent group-hover:text-white 

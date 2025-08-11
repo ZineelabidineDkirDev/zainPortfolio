@@ -5,7 +5,7 @@ const socials = [
   { icon: <FaGithub />, path: 'https://github.com/ZineelabidineDkirDev' },
   { icon: <FaLinkedin />, path: 'https://www.linkedin.com/in/dkirzineelabidine/' },
   { icon: <FaInstagram />, path: 'https://www.instagram.com/zine_elmoubtakir/' },
-  { icon: <FaYoutube />, path: 'https://youtube.com/' },
+  // { icon: <FaYoutube />, path: 'https://youtube.com/' },
   { icon: <FaBehance />, path: 'https://www.behance.net/zinosign' },
 ];
 

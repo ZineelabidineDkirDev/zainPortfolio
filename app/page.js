@@ -85,8 +85,8 @@ const Home = () => {
             <IoMdDownload className="text-xl" />
           </Button>
           <div className="mb-8 xl:mb-0 ">
-            <Social containerStyles="flex gap-4" 
-            iconStyles="w-9 h-9 border border-white rounded-full flex justify-center items-center
+            <Social containerStyles="flex gap-6" 
+            iconStyles="w-11 h-11 border border-white rounded-full flex justify-center items-center
             text-white text-base hover:bg-accent hover:text-white 
             hover: text-primary hover:border-accent hover:transition-all duration-500"/>
           </div>

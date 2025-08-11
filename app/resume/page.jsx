@@ -463,7 +463,7 @@ const Resume = () => {
       transition:{delay:2.5, duration:.5, ease:'easeInOut'},
     }}
     className="min-h-[80vh] flex items-center 
-    justify-center py-14 xl:py-0 mt-2 "
+    justify-center xl:py-14 xl:py-0 xl:mt-2 "
     >
       <div className="xl:mx-auto mx-[30px]">
 
