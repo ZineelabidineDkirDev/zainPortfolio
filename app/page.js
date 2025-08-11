@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { FaQuoteLeft } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 
 
@@ -63,7 +64,7 @@ const Home = () => {
        className="text-center xl:text-left order-2 xl:order-none">
         <span className="text-md mb-8">Full Stack Web Developer / UI UX Designer</span>
         <h1 className="h2 mb-2 leading-8 xl:leading-[60px]">
-          <span className="h2 ">{text}</span> <br />
+          <span className="h2 max-sm:hidden">{text}</span> <br />
           <span className="name_portfolio h1 mt-32 text-[#4727ff] uppercase">
             Zayn <b className="font-bold">El Moubtakir</b>
           </span>
@@ -93,6 +94,7 @@ const Home = () => {
         </div>
       </motion.div>
       <div className="order-1 xl:order-none mb-8 xl:mb-0">
+         <span className="text-2xl xl:hidden left-8 -top-14 relative py-2 px-7 bg-accent/40 rounded-full -rotate-12 gap-4 w-fit border-white border-2 flex"><FaQuoteLeft className="text-sm"/> {text}</span> <br />
         <Photo />
       </div>
     </div>
