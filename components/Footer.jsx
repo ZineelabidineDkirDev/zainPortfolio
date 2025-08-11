@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex xl:ml-14 justify-center items-center flex-col md:flex-row gap-4 mb-4 md:mb-0">
+        <nav className="flex xl:ml-14 max-sm:hidden justify-center items-center flex-col md:flex-row gap-4 mb-4 md:mb-0">
           <a href="/" className="hover:text-indigo-300">Home</a>
           <a href="/services" className="hover:text-indigo-300">Services</a>
           <a href="/resume" className="hover:text-indigo-300">Resume</a>
