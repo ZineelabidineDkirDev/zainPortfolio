@@ -16,7 +16,7 @@ const Photo = () => {
                 transition : {delay: 2, duration: 0.4,
                      ease: "easeIn"},
             }}
-             className="w-[200px] h-[200px] mt-0
+             className="w-[300px] h-[300px] mt-0
             xl:w-[500px] xl:mt-[-50px] xl:h-[500px] mix-blend-hue">
                 <Image src="/images/blender.png" fill priority 
                 quality={100} 
