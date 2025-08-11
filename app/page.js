@@ -21,7 +21,7 @@ const Home = () => {
     "Bonjour, Je suis",
     "Hola Soy",
     "Hallo ich bin",
-    "مرحبا معكم",
+    "مرحبا بكم",
     "ⵣⵓⵍ ⴰⵣⵉⵎ ⴰⵣⵉⵏ"
   ];
 
@@ -94,7 +94,7 @@ const Home = () => {
         </div>
       </motion.div>
       <div className="order-1 xl:order-none mb-8 xl:mb-0">
-         <span className="text-2xl xl:hidden left-8 -top-10 relative py-2 
+         <span className="text-2xl xl:hidden left-8 -top-6 relative py-2 
          px-7 bg-accent/40 rounded-full -rotate-6 gap-4 w-fit border-white border-2 flex"><FaQuoteLeft className="text-sm"/> {text}</span> <br />
         <Photo />
       </div>
