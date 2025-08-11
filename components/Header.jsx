@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header
-      className={`xl:fixed lg:items-center top-0 left-0 xl:w-full max-sm:w-full max-lg:w-full max-sm:py-11 xl:flex items-center gap-8 px-6 max-lg:py-7 xl:py-5 z-50 transition-colors duration-300 ${
+      className={`xl:fixed max-sm:py-4 lg:items-center top-0 left-0 xl:w-full max-sm:w-full max-lg:w-full  xl:flex items-center gap-8 px-6 max-lg:py-7 xl:py-5 z-50 transition-colors duration-300 ${
         scrolled ? 'xl:bg-[#352093] xl:text-[#e7e2ff]  xl:py-1 transition-all duration-300 shadow-md' : 'bg-transparent text-white'
       }`}
     >
