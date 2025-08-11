@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon:<FaPhoneAlt/>,
       title:"Phone number",
-      description:<a href="tel:0624438140">(+212) 624-438140</a>
+      description:<a href="tel:0624438140">(+212) 602151750</a>
     },
     {
       icon:<FaMapMarkedAlt/>,

@@ -8,7 +8,7 @@ const links = [
   { name: "services", path: "/services" },
   { name: "resume", path: "/resume" },
   { name: "works", path: "/works" },
-  { name: "contact", path: "/contact" },
+  // { name: "contact", path: "/contact" },
 ];
 
 const Nav = () => {
